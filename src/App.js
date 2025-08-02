@@ -179,9 +179,21 @@ function App() {
 
   return (
     <div className="container">
+      <div className="floating-elements">
+        <div className="floating-element"></div>
+        <div className="floating-element"></div>
+        <div className="floating-element"></div>
+        <div className="floating-element"></div>
+        <div className="floating-element"></div>
+      </div>
+      
       <div className="header">
         <h1>✨ Quotes Generator</h1>
-        <p>Discover motivational, funny, and mixed emotion quotes</p>
+        <p>Discover the wisdom of the ages</p>
+        <div className="subtitle">
+          From motivational leaders to famous actors, from witty humor to profound wisdom - 
+          find the perfect quote to inspire, entertain, and enlighten your day.
+        </div>
       </div>
 
       <div className={`quote-card ${isLoading ? 'loading' : 'fade-in'}`}>
