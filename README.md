@@ -4,11 +4,12 @@ A beautiful and modern React application that generates motivational, funny, and
 
 ## 🚀 Features
 
-- **Four Quote Categories:**
+- **Five Quote Categories:**
   - 🧡 **Motivational** - Inspiring quotes from famous personalities
   - 😄 **Funny** - Humorous and witty quotes
   - ⚡ **Mixed** - Quotes that combine motivation with humor
   - 📚 **Authors** - Famous quotes from renowned authors and writers
+  - 🎬 **Actors** - Iconic quotes from famous actors and actresses
 
 - **Modern UI/UX:**
   - Beautiful gradient backgrounds
@@ -87,7 +88,10 @@ Humorous and witty quotes that will make you smile and laugh.
 A unique blend of motivational and funny quotes that combine inspiration with humor.
 
 ### Author Quotes
-Famous quotes from renowned authors and writers including J.K. Rowling, William Shakespeare, Albert Camus, Edgar Allan Poe, and many more.
+Famous quotes from renowned authors and writers including J.K. Rowling, William Shakespeare, Albert Camus, Edgar Allan Poe, Robert Frost, and many more.
+
+### Actor Quotes
+Iconic quotes from famous actors and actresses including Arnold Schwarzenegger, Harrison Ford, Tom Hanks, Leonardo DiCaprio, and many more.
 
 ## 🔧 Customization
 

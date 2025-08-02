@@ -128,6 +128,11 @@ code {
   color: white;
 }
 
+.btn-actors {
+  background: linear-gradient(135deg, #fd79a8 0%, #fdcb6e 100%);
+  color: white;
+}
+
 .header {
   text-align: center;
   margin-bottom: 40px;
@@ -190,6 +195,11 @@ code {
 .badge-authors {
   background: rgba(108, 92, 231, 0.2);
   color: #6c5ce7;
+}
+
+.badge-actors {
+  background: rgba(253, 121, 168, 0.2);
+  color: #fd79a8;
 }
 
 @media (max-width: 768px) {

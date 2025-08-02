@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Sparkles, Heart, Smile, Zap, RefreshCw, BookOpen } from 'lucide-react';
+import { Sparkles, Heart, Smile, Zap, RefreshCw, BookOpen, Camera } from 'lucide-react';
 import './App.css';
 
 const quotes = {
@@ -73,7 +73,43 @@ const quotes = {
     { text: "The best way to predict the future is to invent it.", author: "Alan Kay" },
     { text: "The only limit to our realization of tomorrow will be our doubts of today.", author: "Franklin D. Roosevelt" },
     { text: "What we think, we become.", author: "Buddha" },
-    { text: "The only impossible journey is the one you never begin.", author: "Tony Robbins" }
+    { text: "The only impossible journey is the one you never begin.", author: "Tony Robbins" },
+    { text: "The road not taken.", author: "Robert Frost" },
+    { text: "Two roads diverged in a wood, and I—I took the one less traveled by.", author: "Robert Frost" },
+    { text: "The only way to do great work is to love what you do.", author: "Steve Jobs" },
+    { text: "Stay hungry, stay foolish.", author: "Steve Jobs" },
+    { text: "The future belongs to those who believe in the beauty of their dreams.", author: "Eleanor Roosevelt" },
+    { text: "It is our choices that show what we truly are, far more than our abilities.", author: "J.K. Rowling" },
+    { text: "It does not do to dwell on dreams and forget to live.", author: "J.K. Rowling" },
+    { text: "The only way to deal with an unfree world is to become so absolutely free that your very existence is an act of rebellion.", author: "Albert Camus" },
+    { text: "The unexamined life is not worth living.", author: "Socrates" },
+    { text: "To be or not to be, that is the question.", author: "William Shakespeare" },
+    { text: "All that we see or seem is but a dream within a dream.", author: "Edgar Allan Poe" },
+    { text: "The only thing we have to fear is fear itself.", author: "Franklin D. Roosevelt" },
+    { text: "Be the change that you wish to see in the world.", author: "Mahatma Gandhi" },
+    { text: "In the middle of difficulty lies opportunity.", author: "Albert Einstein" },
+    { text: "The journey of a thousand miles begins with one step.", author: "Lao Tzu" },
+    { text: "Life is what happens when you're busy making other plans.", author: "John Lennon" },
+    { text: "The only true wisdom is in knowing you know nothing.", author: "Socrates" },
+    { text: "To thine own self be true.", author: "William Shakespeare" }
+  ],
+  actors: [
+    { text: "I'll be back.", author: "Arnold Schwarzenegger" },
+    { text: "May the Force be with you.", author: "Harrison Ford" },
+    { text: "Here's looking at you, kid.", author: "Humphrey Bogart" },
+    { text: "I'm the king of the world!", author: "Leonardo DiCaprio" },
+    { text: "Life is like a box of chocolates. You never know what you're gonna get.", author: "Tom Hanks" },
+    { text: "I see dead people.", author: "Haley Joel Osment" },
+    { text: "You had me at hello.", author: "Renée Zellweger" },
+    { text: "I'm gonna make him an offer he can't refuse.", author: "Marlon Brando" },
+    { text: "I'm walking here!", author: "Dustin Hoffman" },
+    { text: "I'm the greatest!", author: "Muhammad Ali" },
+    { text: "I'll have what she's having.", author: "Meg Ryan" },
+    { text: "You talkin' to me?", author: "Robert De Niro" },
+    { text: "I'm not a morning person.", author: "Meryl Streep" },
+    { text: "I'm ready for my close-up.", author: "Gloria Swanson" },
+    { text: "I'm the one who knocks.", author: "Bryan Cranston" },
+    { text: "I'm Batman.", author: "Christian Bale" }
   ]
 };
 
@@ -113,6 +149,8 @@ function App() {
         return <Zap size={20} />;
       case 'authors':
         return <BookOpen size={20} />;
+      case 'actors':
+        return <Camera size={20} />;
       default:
         return <Sparkles size={20} />;
     }
@@ -128,6 +166,8 @@ function App() {
         return 'badge-mixed';
       case 'authors':
         return 'badge-authors';
+      case 'actors':
+        return 'badge-actors';
       default:
         return 'badge-motivational';
     }
@@ -194,6 +234,14 @@ function App() {
         >
           <BookOpen size={18} />
           Authors
+        </button>
+        
+        <button 
+          className={`btn btn-actors ${currentCategory === 'actors' ? 'active' : ''}`}
+          onClick={() => getRandomQuote('actors')}
+        >
+          <Camera size={18} />
+          Actors
         </button>
         
         <button 
